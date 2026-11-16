@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sunlit Cup Cafe</title>
+  <style>
+    /* Page Layout & Fonts */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdf8f2; /* Warm cream background */
+      color: #3e2723; /* Deep coffee brown text */
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 650px;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    /* Headings & Tagline */
+    h1 {
+      color: #d84315;
+      margin-bottom: 5px;
+      font-size: 2.2rem;
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #6d4c41;
+      font-size: 1.1rem;
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      color: #4e342e;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    /* Cafe Image */
+    .cafe-img {
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* Menu Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto 30px auto;
+    }
+
+    th, td {
+      border: 1px solid #d7ccc8;
+      padding: 12px 15px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #5d4037;
+      color: #ffffff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fbf7f4;
+    }
+
+    /* Order Button */
+    .order-btn {
+      background-color: #04AA6D;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 14px 32px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .order-btn:hover {
+      background-color: #059862;
+    }
+
+    /* Confirmation message when clicked */
+    #order-msg {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #04AA6D;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Cafe Name & Tagline -->
+    <h1>The Sunlit Cup Cafe</h1>
+    <p class="tagline">We offer chai with chah!</p>
+
+    <!-- Cafe Photo -->
+    <img class="cafe-img" src="images/images.jpeg" alt="The Sunlit Cup Chai and Fast Food">
+
+    <!-- Menu Chart -->
+    <h2>Sunlit Menu</h2>
+    <table>
+      <tr>
+        <th>Items</th>
+        <th>Price (Rs.)</th>
+      </tr>
+      <tr>
+        <td>Quetta Special Chai</td>
+        <td>150</td>
+      </tr>
+      <tr>
+        <td>Cheese Paratha</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>Sunlit Special Biryani</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>Sunlit Special Matka Chai</td>
+        <td>300</td>
+      </tr>
+    </table>
+
+    <!-- Order Button -->
+    <button class="order-btn" onclick="placeOrder()">Order Now</button>
+    <p id="order-msg"></p>
+  </div>
+
+  <!-- Simple Script to Make the Button Work -->
+  <script>
+    function placeOrder() {
+      document.getElementById("order-msg").innerText = "Thank you! Please call 0303-3555069 or visit the counter to confirm your order.";
+    }
+  </script>
+
+</body>
+</html>
