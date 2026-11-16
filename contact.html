@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Table Reservations | ChaiKhana</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">Chai<span>Khana</span></a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html" class="">Home &amp; Menu</a></li>
+        <li><a href="about.html" class="">About Us</a></li>
+        <li><a href="branches.html" class="">Branches</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Reserve a Table</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="page-header">
+    <div class="container">
+      <h1>Contact &amp; Table Reservations</h1>
+      <p>Planning a group chai meetup, corporate breakfast platter, or private event? Let us save your spot.</p>
+    </div>
+  </div>
+  <section>
+    <div class="container grid-2">
+      <div>
+        <span class="badge">Reach Out</span>
+        <h2>Pull Up a Chair</h2>
+        <p style="margin-bottom:2rem;">Select your preferred branch below to book a table or inquire about catering our live chai station for events.</p>
+        <div class="menu-card" style="margin-bottom:1.25rem;"><div class="card-body"><h3>Central Guest Desk</h3><p>Email: hello@chaikhana.example.com<br>Reservations Line: +92 (51) 555-0192</p></div></div>
+        <div class="menu-card"><div class="card-body"><h3>Live Chai Catering</h3><p>We bring our brass samovars, clay kulhads, and fresh parathas directly to weddings, corporate offices, and private gatherings.</p></div></div>
+      </div>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group"><label for="full-name">Your Name</label><input type="text" id="full-name" placeholder="e.g., Bilal Tariq" required /></div>
+        <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="bilal@example.com" required /></div>
+        <div class="form-group">
+          <label for="branch-select">Select Branch</label>
+          <select id="branch-select">
+            <option value="Islamabad (F-7 Markaz)">Islamabad — F-7 Markaz</option>
+            <option value="Lahore (Gulberg III)">Lahore — Gulberg III</option>
+            <option value="Karachi (DHA Phase 6)">Karachi — DHA Phase 6</option>
+          </select>
+        </div>
+        <div class="form-group"><label for="message">Reservation or Catering Notes</label><textarea id="message" rows="4" placeholder="Party size, preferred time, or menu requests..." required></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Confirm Request</button>
+        <div id="form-feedback" class="form-feedback"></div>
+      </form>
+    </div>
+  </section>
+  <div id="toast-banner" class="toast-banner"></div>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>ChaiKhana &amp; Roastery</h4>
+          <p>Brewing authentic pink Kashmiri noon chai, Peshawari green kahwa, special masala chai, and fresh street-style snacks across our regional lounges.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home &amp; Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="branches.html">Our Branches</a></li>
+            <li><a href="contact.html">Contact &amp; Reservations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Lounges</h4>
+          <ul>
+            <li><a href="branches.html">Islamabad (F-7)</a></li>
+            <li><a href="branches.html">Lahore (Gulberg)</a></li>
+            <li><a href="branches.html">Karachi (DHA)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Daily Hours</h4>
+          <p>Mon – Thu: 8:00 AM – 12:00 AM<br>Fri – Sun: 8:00 AM – 2:00 AM<br>hello@chaikhana.example.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 ChaiKhana &amp; Roastery. Brewed fresh every hour.
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
