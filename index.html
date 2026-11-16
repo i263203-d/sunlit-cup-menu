@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChaiKhana | Artisanal Chai, Green Kahwa &amp; Regional Lounges</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">Chai<span>Khana</span></a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html" class="active">Home &amp; Menu</a></li>
+        <li><a href="about.html" class="">About Us</a></li>
+        <li><a href="branches.html" class="">Branches</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Reserve a Table</a></li>
+      </ul>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">Freshly Brewed in Copper Samovars</span>
+        <h1>Piping Hot Chai &amp; Timeless Conversations</h1>
+        <p>Experience velvety pink Kashmiri chai, aromatic Peshawari green kahwa, spiced special chai, crispy laccha parathas, and Punjabi aloo samosas across our Islamabad, Lahore, and Karachi lounges.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Explore Menu</a>
+          <a href="branches.html" class="btn btn-outline" style="color:#fde68a; border-color:#fde68a;">Find a Branch</a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="https://images.pexels.com/photos/36662612/pexels-photo-36662612/free-photo-of-traditional-clay-cup-masala-chai-street-vendor.jpeg?auto=compress&w=1260&h=750&dpr=1" onerror="this.onerror=null;this.src='assets/images/menu-special-chai.jpg';" alt="Traditional Clay Kulhad Masala Chai" />
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Signature Menu</h2>
+        <p>Authentic artisanal brews paired with crispy, freshly made tea-time favorites.</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-menu-filter="all">All Favorites (5)</button>
+        <button class="filter-btn" data-menu-filter="chai">Artisanal Chai &amp; Green Tea</button>
+        <button class="filter-btn" data-menu-filter="snacks">Hot Snacks &amp; Parathas</button>
+      </div>
+
+      <div class="grid-3">
+        <div class="menu-card" data-menu-category="chai">
+          <div class="menu-media">
+            <span class="hot-badge">VELVETY PINK</span>
+            <span class="price-pill">PKR 380</span>
+            <img src="https://hinzcooking.com/wp-content/uploads/2019/12/Kashmiri-Pink-Tea-683x1024.jpg" onerror="this.onerror=null;this.src='assets/images/menu-kashmiri.jpg';" alt="Pink Kashmiri Noon Chai with Pistachios" />
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-meta">Kashmiri Specialty</div>
+              <h3>Pink Kashmiri Noon Chai</h3>
+              <p>Slow-whisked green tea leaves infused with star anise, sea salt, and topped with crushed green pistachios and sliced almonds.</p>
+            </div>
+            <div class="card-footer-row">
+              <span style="font-size:0.85rem; color:var(--muted);">Garnished with Nuts</span>
+              <button class="order-mini-btn" data-item="Pink Kashmiri Chai">+ Add to Tray</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-menu-category="chai">
+          <div class="menu-media">
+            <span class="hot-badge">HERBAL KAHWA</span>
+            <span class="price-pill">PKR 300</span>
+            <img src="https://images.pexels.com/photos/7565502/pexels-photo-7565502.jpeg?auto=compress&cs=tinysrgb&w=800" onerror="this.onerror=null;this.src='assets/images/menu-greentea.jpg';" alt="Peshawari Green Tea Kahwa with Mint" />
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-meta">Digestive Classic</div>
+              <h3>Peshawari Green Tea Kahwa</h3>
+              <p>Fragrant whole-leaf green tea brewed with fresh garden mint, cracked green cardamom pods, and saffron strands.</p>
+            </div>
+            <div class="card-footer-row">
+              <span style="font-size:0.85rem; color:var(--muted);">Served in Clear Glass</span>
+              <button class="order-mini-btn" data-item="Peshawari Green Tea">+ Add to Tray</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-menu-category="chai">
+          <div class="menu-media">
+            <span class="hot-badge">HOUSE SPECIAL</span>
+            <span class="price-pill">PKR 350</span>
+            <img src="https://images.pexels.com/photos/36662612/pexels-photo-36662612/free-photo-of-traditional-clay-cup-masala-chai-street-vendor.jpeg?auto=compress&w=1260&h=750&dpr=1" onerror="this.onerror=null;this.src='assets/images/menu-special-chai.jpg';" alt="Special Masala Chai in Clay Kulhads" />
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-meta">Signature Blend</div>
+              <h3>ChaiKhana Special Masala Chai</h3>
+              <p>Rich Assam tea simmered with Ceylon cinnamon bark, star anise, fresh ginger, and cloves in a traditional clay kulhad.</p>
+            </div>
+            <div class="card-footer-row">
+              <span style="font-size:0.85rem; color:var(--muted);">Clay Kulhad Serve</span>
+              <button class="order-mini-btn" data-item="Special Masala Chai">+ Add to Tray</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-menu-category="snacks">
+          <div class="menu-media">
+            <span class="hot-badge">FRESH OFF TAWA</span>
+            <span class="price-pill">PKR 240</span>
+            <img src="https://binjalsvegkitchen.com/wp-content/uploads/2015/08/Pudina-Lachha-Paratha-H1.jpg" onerror="this.onerror=null;this.src='assets/images/menu-paratha.jpg';" alt="Crispy Laccha Paratha with Mint Chutney" />
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-meta">Chai Companion</div>
+              <h3>Crispy Laccha Paratha</h3>
+              <p>Multi-layered whole-wheat flatbread brushed with pure desi ghee and griddled until golden and flaky, served with mint chutney.</p>
+            </div>
+            <div class="card-footer-row">
+              <span style="font-size:0.85rem; color:var(--muted);">With Mint Chutney</span>
+              <button class="order-mini-btn" data-item="Crispy Laccha Paratha">+ Add to Tray</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-menu-category="snacks">
+          <div class="menu-media">
+            <span class="hot-badge">CRISP &amp; WARM</span>
+            <span class="price-pill">PKR 260</span>
+            <img src="https://honestcooking.com/wp-content/uploads/2026/03/potato-samosas-and-mango-chutney.jpg" onerror="this.onerror=null;this.src='assets/images/menu-samosa.jpg';" alt="Punjabi Aloo Samosa Platter with Chutneys" />
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-meta">Tea-Time Platter</div>
+              <h3>Punjabi Aloo Samosa Duo</h3>
+              <p>Crisp golden pastry pockets stuffed with cumin-spiced potatoes and peas, paired with fresh green mint and tamarind chutneys.</p>
+            </div>
+            <div class="card-footer-row">
+              <span style="font-size:0.85rem; color:var(--muted);">2 Pieces per Plate</span>
+              <button class="order-mini-btn" data-item="Punjabi Aloo Samosa">+ Add to Tray</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="branches" class="bg-warm">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Regional Chai Lounges</h2>
+        <p>Visit our lounges in Islamabad, Lahore, and Karachi for late-night chai and warm hospitality.</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-branch-filter="all">All Lounges</button>
+        <button class="filter-btn" data-branch-filter="islamabad">Islamabad</button>
+        <button class="filter-btn" data-branch-filter="lahore">Lahore</button>
+        <button class="filter-btn" data-branch-filter="karachi">Karachi</button>
+      </div>
+
+      <div class="grid-3">
+        <div class="menu-card" data-branch-city="islamabad">
+          <div class="menu-media">
+            <img src="https://newon.pk/wp-content/uploads/2026/03/1000949407.webp" onerror="this.onerror=null;this.src='assets/images/branch-isb.jpg';" alt="Islamabad Cafe Lounge" />
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-meta">Flagship Lounge</div>
+              <h3>Islamabad — F-7 Markaz</h3>
+              <p>Street 13, Jinnah Super Market, F-7, Islamabad</p>
+            </div>
+            <p style="margin-top:0.75rem; font-size:0.9rem; color:var(--muted);">Open Daily: 8:00 AM – 1:00 AM<br>Tel: +92 (51) 555-0192</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-branch-city="lahore">
+          <div class="menu-media">
+            <img src="https://chakorventures.com/wp-content/uploads/2026/09/Andaaz-Restaurant.webp" onerror="this.onerror=null;this.src='assets/images/branch-lhr.jpg';" alt="Lahore Heritage Terrace Lounge" />
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-meta">Heritage Terrace</div>
+              <h3>Lahore — Gulberg III</h3>
+              <p>45-C MM Alam Road, Gulberg III, Lahore</p>
+            </div>
+            <p style="margin-top:0.75rem; font-size:0.9rem; color:var(--muted);">Open Daily: 8:00 AM – 2:00 AM<br>Tel: +92 (42) 555-0148</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-branch-city="karachi">
+          <div class="menu-media">
+            <img src="https://www.hmagpak.com/digital_images/large/2025-10-07/an-evening-at-da-noi-karachi-1759859715-7879.jpg" onerror="this.onerror=null;this.src='assets/images/branch-khi.jpg';" alt="Karachi Rooftop Terrace Lounge" />
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-meta">Rooftop Terrace</div>
+              <h3>Karachi — DHA Phase 6</h3>
+              <p>Lane 4, Bukhari Commercial, DHA Phase 6, Karachi</p>
+            </div>
+            <p style="margin-top:0.75rem; font-size:0.9rem; color:var(--muted);">Open Daily: 9:00 AM – 2:30 AM<br>Tel: +92 (21) 555-0185</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:2.5rem;">
+        <a href="branches.html" class="btn btn-primary">View Full Branch Directory</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="toast-banner" class="toast-banner"></div>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>ChaiKhana &amp; Roastery</h4>
+          <p>Brewing authentic pink Kashmiri noon chai, Peshawari green kahwa, special masala chai, and fresh street-style snacks across our regional lounges.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home &amp; Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="branches.html">Our Branches</a></li>
+            <li><a href="contact.html">Contact &amp; Reservations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Lounges</h4>
+          <ul>
+            <li><a href="branches.html">Islamabad (F-7)</a></li>
+            <li><a href="branches.html">Lahore (Gulberg)</a></li>
+            <li><a href="branches.html">Karachi (DHA)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Daily Hours</h4>
+          <p>Mon – Thu: 8:00 AM – 12:00 AM<br>Fri – Sun: 8:00 AM – 2:00 AM<br>hello@chaikhana.example.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 ChaiKhana &amp; Roastery. Brewed fresh every hour.
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
